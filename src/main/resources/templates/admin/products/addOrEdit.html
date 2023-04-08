@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="css/admin.css">
+    </head>
+<body>
+
+<main class="container">
+    <header class="row text-center"></header>
+    <section class="row">
+    <div class="col mt-4">
+      <form action="" method="post">
+      <div class="card">
+        <div class="card-header">
+          <h2> Add new Product </h2>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-7">
+              <div class="form-group">
+                <label for="productId">Product ID</label>
+                <input type="text" class="form-control" name="Product" id="Product" 
+                aria-describedby="ProductHid" placeholder="Product ID">
+                <small id="ProductHid" class="form-text text-muted">Product id is Required</small>
+              </div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" id="name" 
+                aria-describedby="nameHid" placeholder="name">
+                <small id="nameHid" class="form-text text-muted">Name is Required</small>
+              </div>
+              <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="text" class="form-control" name="quantity" id="quantity" 
+                aria-describedby="quantityHid" placeholder="quantity">
+                <small id="quantityHid" class="form-text text-muted">Quantity id is Required</small>
+              </div>
+              <div class="input-group form-group">
+                <span class="input-group-text">Unit Price</span>
+                <input type="number" name="unitPrice" id="unitprice" class="form-control" placeholder="unit price">
+                <span class="input-group-text">$</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="categoryId">Category</label>
+                <select class="form-control" name="categoryId">
+                  <option>C1</option>
+                  <option>C2</option>
+                  <option>C3</option>
+                </select>
+              </div>
+              
+            </div>
+            <div class="col-3">
+              <img src="images/LAPTOP.png" width="90%" 
+              class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+              <div class="form-group">
+                <label for="productImage">Image Fil</label>
+                <input type="file" class="form-control-file" name="productImage" id="productImage" 
+                placeholder="Product Image" aria-describedby="productImage">
+                <small id="productImage" class="form-text text-muted">Product imge is Required</small>
+              </div>
+              <div class="input-group form-group">
+                <span class="input-group-text">Discount</span>
+                <input type="number" name="discount" id="discount" class="form-control" placeholder="Discount">
+                <span class="input-group-text">%</span>
+              </div>
+              <div class="form-group">
+                <label for="status">Status</label>
+                <select class ="form-control" name="status" id="status">
+                  <option> Out of Stock</option>
+                  <option>On sale</option>
+                  <option>Fetured</option>
+                  <option>Bestseller</option>
+                  <option>Out of Oder</option>
+                </select>
+              </div>
+            </div>           
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" name="description" id="description" rows="5"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+                <button class="btn btn-success"><i class="fa-regular fa-file"></i>New</button>
+                <button class="btn btn-primary"><i class="fa-regular fa-file"></i>save</button>
+                <button class="btn btn-danger float-right" ><i class="fa-regular fa-file"></i>Delete </button>
+        </div>
+      </div>
+    </form>
+    </div>
+    </section>
+    <footer class="row"></footer>
+</main>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
